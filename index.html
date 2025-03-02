@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaderno Vivo</title>
+    <link rel="icon" type="image/png" href="Media/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="title-group">
+            <h1 class="title">Cuaderno Vivo</h1>
+            <img src="Media/cuadernoLogo.png" alt="Logo" class="Logo">
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">⋮</button>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="#">Enlaces</a></li>
+            <li><a href="#">Acerca de...</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="Media/logo.png" alt="Logo" class="logo">
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('active');
+            overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.classList.remove('active');
+                overlay.style.display = 'none';
+            }
+        });
+    </script>
+
+<div class="main-content" id="main-content">
+    <h2 id="cuaderno-vivo-un-viaje-al-corazón-del-pensamiento-martiano">
+Cuaderno Vivo: Un viaje al corazón del pensamiento martiano</h2>
+<p>Es un inmenso placer para nosotros darte la bienvenida a
+<strong>Cuaderno Vivo</strong>, un espacio creado con el propósito de
+compartir contigo el fascinante universo contenido en las páginas de una
+joya literaria e histórica: el <strong>Cuaderno Martiano IV</strong>.
+Este cuaderno, parte invaluable del legado de José Martí, no es solo un
+compendio de escritos, sino un reflejo profundo de su genio intelectual,
+su pasión patriótica y su visión universal.</p>
+<p>Aquí, en <strong>Cuaderno Vivo</strong>, hemos diseñado un lugar
+donde cada página del cuaderno cobra vida a través de resúmenes claros,
+análisis detallados y reflexiones que te permitirán adentrarte en el
+pensamiento martiano como nunca antes. Este proyecto nace con la
+convicción de que el conocimiento debe ser accesible y dinámico, y que
+las ideas de Martí siguen siendo tan vigentes hoy como lo fueron en su
+tiempo.En estas páginas virtuales, encontrarás recursos cuidadosamente
+elaborados para acompañarte en tu exploración del Cuaderno Martiano IV.
+Desde los textos más emblemáticos hasta los detalles menos conocidos,
+nuestro objetivo es brindarte las herramientas necesarias para
+profundizar en la historia de Cuba, comprender los ideales que sustentan
+nuestra Revolución y descubrir cómo el pensamiento martiano sigue
+iluminando caminos hacia un mundo más justo, libre y humano.</p>
+<p>Pero <strong>Cuaderno Vivo</strong> no es solo un sitio de consulta;
+es una invitación a participar activamente. Queremos que este espacio
+sea un diálogo constante entre tú y las ideas de Martí, un lugar donde
+puedas reflexionar, debatir y hacer tuyos los valores que él defendió
+con tanto fervor. Porque un cuaderno, por más valioso que sea, solo
+cobra verdadero sentido cuando se convierte en un puente entre el pasado
+y el presente, entre el autor y el lector. Así que te invitamos a sumergirte en este viaje único. Explora,
+aprende, cuestiona y comparte. Haz que este cuaderno no quede en un
+lugar empolvado de tu mente, sino que cobre vida en tus manos y en tu
+corazón. Juntos podemos transformar estas páginas en un <strong>Cuaderno
+Vivo</strong>, un testimonio eterno de las ideas que nos unen como
+pueblo y como humanidad.</p>
+<p>¡Bienvenido! Esperamos que disfrutes de esta experiencia y que
+encuentres aquí inspiración para seguir construyendo un futuro guiado
+por los principios que Martí nos legó. <strong>¡Ven y haz que este cuaderno sea un cuaderno
+vivo!</strong></p>
+<h2 id="quién-fue-martí">¿Quién fue Martí?</h2>
+<div class="quien-fue-marti">
+    <img src="Media/caballo.jpeg" alt="Marti Estatua" class="marti1">
+    <div class="texto1">
+    <p>José Julián Martí Pérez (La Habana, 28 de enero de 1853 – Dos Ríos,
+19 de mayo de 1895) es, para Cuba y el mundo, mucho más que un héroe
+nacional: es el símbolo de la libertad, la justicia y la unidad
+latinoamericana. Nacido en el seno de una familia humilde, Martí desde
+niño demostró una inteligencia desbordante y una sensibilidad única ante
+las desigualdades que marcaban la vida bajo el colonialismo español. 
+A los 16 años, su voz ya resonaba con fuerza: organizó a estudiantes,
+denunció la opresión colonial y defendió la independencia de Cuba. 
+Su lucha temprana lo llevó a prisión y, luego, al exilio.</p>
+    </div>
+</div>
+<p>En España, México, Guatemala, Venezuela y Estados Unidos, Martí no solo se
+convirtió en un intelectual reconocido —con obras maestras como
+<em>Versos Sencillos</em> o ensayos que redefinieron el pensamiento
+americano—, sino que tejió redes para unir a los cubanos en torno a un
+ideal: una patria libre, soberana y con justicia social.</p>
+<p>En 1892, fundó el Partido Revolucionario Cubano, desde el cual
+organizó la guerra necesaria para romper las cadenas del colonialismo.
+Pero Martí no fue solo un revolucionario de armas: fue un visionario que
+advirtió los peligros del imperialismo, un defensor de la educación como
+herramienta de emancipación y un puente entre las culturas de América
+Latina y el Caribe.</p><p>Su muerte en combate, a los 42 años, selló su leyenda. Hoy, más de un
+siglo después, Martí sigue vivo en cada aula cubana, en cada verso que
+se aprende de memoria y en cada debate sobre soberanía y dignidad. Para
+nosotros, los cubanos, no es solo un prócer: es el maestro que nos
+enseñó que <em>“la patria es ara, no pedestal”</em>, y que un pueblo
+unido, con ideas claras y corazón noble, siempre podrá hacer frente a
+los desafíos de su tiempo.</p>
+<p>En <strong>Cuaderno Vivo</strong>, honramos su memoria estudiando su
+obra, porque en cada línea impresa en el <em>Cuaderno Martiano IV</em>
+late la esencia de un hombre que soñó —y dio su vida— por un mundo
+mejor.</p>
+
+<h2 id="qué-es-el-cuaderno-martiano-y-por-qué-estudiarlo">¿Qué es el
+Cuaderno Martiano y por qué estudiarlo?</h2>
+<p>El “Cuaderno Martiano” es una <strong>recopilación de las obras
+completas de José Martí</strong>, específicamente el Volumen IV, que se
+centra en Cuba, la política y la revolución. Estudiar este cuaderno
+permite adentrarse en las ideas de Martí sobre la <strong>revolución, la
+política cubana y la identidad latinoamericana</strong>, ofreciendo una
+visión profunda de los eventos y las figuras clave en la <strong>lucha
+por la independencia de Cuba</strong> y facilitando el entendimiento de
+la <strong>realidad social, económica y política de Cuba</strong> en el
+siglo XIX, así como los desafíos y aspiraciones de su pueblo. El estudio
+del cuaderno también fomenta la reflexión sobre los <strong>valores de
+patriotismo, unidad y sacrificio</strong> que impulsaron a Martí y a
+otros revolucionarios cubanos, ayuda a comprender la <strong>vigencia
+del pensamiento martiano</strong> en el contexto contemporáneo, tanto en
+Cuba como en América Latina, y permite apreciar la <strong>capacidad del
+ser humano de crear un ente social, productivo y decoroso</strong> aún
+en condiciones hostiles. En resumen, el “Cuaderno Martiano” es esencial
+para comprender el legado de Martí y su impacto en la historia y la
+identidad cubana.</p>
+<div>
+    <h2 id="interdisciplina" class="enfoque-interdisciplinario">¿Cómo influye este en las diferentes disciplinas universitarias?</h2>
+    <p>El <em>Cuaderno martiano IV</em> contiene una rica variedad de ideas
+        que pueden aplicarse en diversas asignaturas universitarias. A
+        continuación, se presentan algunas aplicaciones específicas:</p>
+        <ul>
+        <li><p><strong>Filosofía:</strong> El cuaderno refleja el pensamiento
+        político y latinoamericano de Martí. Se destaca su concepto y respeto
+        por la realidad. También se puede analizar su doctrina, resaltando el
+        cariño como esencia y prédica constante. Además, se puede examinar su
+        visión sobre la soberbia, las preocupaciones inconvenientes y
+        destructivas, y la escisión entre los factores inevitables de la
+        sociedad cubana.</p></li>
+        <li><p><strong>Historia de Cuba:</strong> El texto ofrece una
+        perspectiva valiosa sobre la política y la revolución en Cuba en el
+        siglo XIX. Incluye cartas de Martí a figuras clave como Antonio Maceo,
+        Máximo Gómez y Juan Gualberto Gómez, que proporcionan información de
+        primera mano sobre la gestación de la independencia cubana. Se pueden
+        estudiar las diferencias entre las condiciones de Cuba y las de otras
+        repúblicas americanas durante su emancipación. También, se analiza la
+        incapacidad de España para el buen gobierno de Cuba, así como las
+        razones de la capacidad de Cuba para su propio gobierno.</p></li>
+        <li><p><strong>Matemática:</strong> Aunque no es un tema central, Martí
+        menciona la necesidad de “calcular fuerzas” en el contexto de la
+        revolución. Esto podría utilizarse para ilustrar la aplicación de
+        modelos matemáticos en el análisis de conflictos y estrategias.</p></li>
+        <li><p><strong>Literatura:</strong> El cuaderno contiene discursos y
+        textos periodísticos de Martí. Se puede analizar su estilo retórico, el
+        uso de imágenes y metáforas, y su dominio del lenguaje. También, se
+        puede estudiar su crítica a la “cultura extranjeriza y desautorizada” y
+        su defensa del “profundo conocimiento de la labor del hombre en el
+        rescate y sostén de su dignidad”.</p></li>
+        <li><p><strong>Estudios Latinoamericanos:</strong> El cuaderno ofrece
+        una visión del pensamiento latinoamericano de Martí y su preocupación
+        por los problemas de la región. Se puede analizar su crítica a la
+        “imitación pegadiza” de las formas suntuosas de la vida moderna y su
+        defensa de la originalidad y la cultura propia.</p></li>
+        <li><p><strong>Ciencias Políticas:</strong> Se pueden analizar las ideas
+        de Martí sobre la república, la democracia y el civismo. Se destaca su
+        visión de una “república trabajadora” y su llamado a la unidad y la
+        concordia entre los cubanos. También, se puede estudiar su crítica a los
+        “caudillos rivales” y su defensa de la participación de todas las
+        regiones y sectores de la sociedad en la construcción nacional.</p></li>
+        <li><p><strong>Sociología:</strong> Se puede analizar la visión de Martí
+        sobre la sociedad cubana, incluyendo su análisis de las clases sociales,
+        la raza y la cultura. Se destaca su defensa de la igualdad y la justicia
+        social, así como su llamado a la “unificación de las diversas secciones
+        del país”.</p></li>
+        <li><p><strong>Comunicación:</strong> Se puede analizar el papel de la
+        prensa y la propaganda en la revolución cubana. Se destaca la
+        importancia del periódico <em>Patria</em> como herramienta para difundir
+        las ideas revolucionarias y movilizar a la población. También, se puede
+        estudiar la estrategia de Martí de dirigir mensajes a diferentes
+        públicos, incluyendo a los españoles.</p></li>
+        </ul>
+        <p>En resumen, el <em>Cuaderno martiano IV</em> es una fuente valiosa
+        para el estudio de una amplia gama de temas en las humanidades y las
+        ciencias sociales. Sus ideas pueden aplicarse en diversas asignaturas
+        universitarias, ofreciendo una perspectiva rica y compleja sobre la
+        historia, la política, la cultura y la sociedad cubanas y
+        latinoamericanas.</p>
+      <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #0186d3;display:flex;justify-content: center;font-size: 30px;font-style: italic">
+        <strong>¡Qué esperas para estudiarlo!</strong>
+      </p>  
+</div>
+    </div>
+    
+</body>
+</html>

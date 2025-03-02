@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 60px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0598ee;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.title-group {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 130px;
+    height: 100%;
+    background: #0598ee;
+    transition: right 0.7s ease;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.main-content p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 1.5em 0;
+}
+
+.main-content h2 {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #0186d3;
+    border-bottom: 2px solid #0598ee;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .quien-fue-marti {
+    display: flex;
+    gap: 30px;
+ }
+
+ .texto1 {
+    order: 1;
+ }
+
+ .marti1 {
+    order: 2;
+    height: 350px;
+    width: 400px;
+ }
+
+
+@media (max-width: 600px) {
+    .Logo {
+        height: 35px;
+    }
+    .title {
+        font: size 1.3em;
+    }
+    .sidebar {
+        width: 80%;
+    }
+    .logo {
+        width: 80%;
+    }
+}
