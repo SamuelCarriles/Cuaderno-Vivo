@@ -1,10 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
+html, body {
+    height: 100%;
+    margin: 0;  
+}
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 60px;
+    padding-top: 3em;
 }
 .banner-principal {
     display: flex;
@@ -88,6 +93,25 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+    transition: color 0.3s;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    flex: 1;
+}
+.footer {
+    bottom: 0;
+   width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #0598ee;
+    padding: 0.01em;
+}
+.footer > p {
+    text-align: center;
 }
 
 .logo-container {
@@ -191,21 +215,10 @@ h2 {
     .title {
         font: size 1.3em;
     }
-    .top-bar {
-        width: 80%;
-    }
-    .sidebar {
-        width: 60%;
-        right: -80%;
-    }
     .logo {
         width: 80%;
     }
-    .main-content {
-        width: 80%;
-    }
-    .marti1 {
-        width: 80%;
-        height: auto;
+    .container {
+        width: 100vh;
     }
 }
