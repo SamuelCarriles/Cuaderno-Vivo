@@ -193,8 +193,20 @@ h2 {
     }
     .sidebar {
         width: 80%;
+        right: -80%;
     }
     .logo {
         width: 80%;
+    }
+    .main-content {
+        width: 80%;
+    }
+    .marti1 {
+        order:1;
+        width: 80%;
+        height: auto;
+    }
+    .texto1 {
+        order: 2;
     }
 }
