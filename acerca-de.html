@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaderno Vivo - Acerca de</title>
+    <link rel="icon" type="image/png" href="Media/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="title-group">
+            <h1 class="title">Cuaderno Vivo</h1>
+            <img src="Media/cuadernoLogo.png" alt="Logo" class="Logo">
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">⋮</button>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+            <li><a href="acerca-de.html">Acerca de...</a></li>
+        </ul>
+        <div class="logo-container">
+            <img src="Media/logo.png" alt="Logo" class="logo">
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('active');
+            overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.classList.remove('active');
+                overlay.style.display = 'none';
+            }
+        });
+    </script>
+
+<div class="main-content" id="main-content">
+    <h2>Acerca de...</h2>
+    <p><strong>Cuaderno Vivo</strong> es un proyecto desarrollado por <a href="https://orcid.org/0009-0003-2084-0357">Samuel Carriles Baños</a> y <a href="https://orcid.org/0009-0002-8330-0828">Cristhian Hernández Martínez</a> con el objetivo de contribuir a la formación integral de los jóvenes universitarios, usando como instrumento el volumen IV del <em>Cuaderno Martiano</em>.</p>
+    <p style="color:rgb(60, 60, 60); font-size: 18px; line-height: 1px;font-style: italic; font-weight: bold;">Copyright© 2025 Samuel Carriles Baños, Cristhian Hernández Martínez.</p>
+    <p style="color:rgb(60, 60, 60); font-size: 18px; line-height: 1px;font-style: italic;">Todos los derechos reservados.</p>
+</div>
+</body>
+</html>

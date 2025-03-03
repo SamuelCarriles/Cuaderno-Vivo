@@ -6,7 +6,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 60px;
 }
-
+.banner-principal {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
 .top-bar {
     position: fixed;
     top: 0;
@@ -147,7 +151,38 @@ h2 {
     height: 350px;
     width: 400px;
  }
+.profundizando h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#0186d3;
+} 
+.profundizando {
+    font-style: italic;
+}
+.importancia-montecristi li{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 1.5em 0;
+}
 
+.testamento li {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 1.5em 0;
+}
+
+.sumario details {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.7;
+    margin: 1.5em 0;
+}
+
+.sumario summary {
+    font-weight: bold;
+}
 
 @media (max-width: 600px) {
     .Logo {
