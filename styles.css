@@ -107,7 +107,6 @@ body {
 }
 .footer {
     bottom: 0;
-   width: 100%;
     color: rgb(255, 255, 255);
     background-color: #0598ee;
     padding: 0.01em;
@@ -220,5 +219,8 @@ h2 {
     .logo {
         width: 80%;
     }
+    .quien-fue-marti {
+        flex-direction: column;
 
+    }
 }
