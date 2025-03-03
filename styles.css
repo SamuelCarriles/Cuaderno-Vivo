@@ -5,7 +5,8 @@ html {
 }
 html, body {
     height: 100%;
-    margin: 0;  
+    margin: 0;
+    width: 100%;  
 }
 body {
     display: flex;
@@ -211,6 +212,9 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    html, body {
+        width: auto;
+    }
     .Logo {
         height: 35px;
     }
