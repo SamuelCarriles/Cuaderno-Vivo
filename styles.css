@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    display: flex;
+    width: 100vw;
 }
 html, body {
     height: 100%;
@@ -218,7 +220,5 @@ h2 {
     .logo {
         width: 80%;
     }
-    .container {
-        width: 100vh;
-    }
+
 }
