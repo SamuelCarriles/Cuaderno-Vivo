@@ -113,6 +113,7 @@ body {
 }
 .footer > p {
     text-align: center;
+    font-size: 1em;
 }
 
 .logo-container {
@@ -221,6 +222,8 @@ h2 {
     }
     .quien-fue-marti {
         flex-direction: column;
-
+    }
+    .sidebar {
+        width: 200px;
     }
 }
